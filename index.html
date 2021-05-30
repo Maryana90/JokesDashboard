@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:;base64,=">
+    <title>Jokes dashboard</title>
+
+</head>
+
+<body>
+    <div id = "main_container">
+        <div id="main_content_section">
+
+            <div id="greeting">
+                <h1>Hey!</h1>
+                <h2>Let's try to find a joke for you:</h2>
+            </div>
+        
+            <form id="form">
+                <label>Random
+                    <input type="radio" value="random" name="joke_type" checked>
+                </label>
+        
+                <label>From categories
+                    <input type="radio" value="categories" name="joke_type">
+                    <select id="categories"></select>
+                </label>
+        
+                <label>Search
+                    <input type="radio" value="search" name="joke_type">
+                    <input type="text" id="search_query">
+                </label>
+        
+                <button id="get_joke">Get a joke</button>
+            </form>
+        
+            <div id="jokes">
+                <div id="all"></div>
+
+            </div>
+        </div>
+
+        <div id="favourite_jokes">
+            <div id="favourites">fooo</div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

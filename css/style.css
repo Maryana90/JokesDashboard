@@ -1,0 +1,82 @@
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+#main_container{
+    background-color: #FFFF;
+    overflow: hidden;
+}
+#main_content_section{
+    margin-left: 10px;
+    float:left;
+    width: 57%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5px 15px;
+}
+label{
+    padding: 5px;
+    margin: 5px 0;
+}
+#greeting{
+    margin-left: 5px;
+}
+#jokes{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#jokes>*{
+    margin: 5px;
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#get_joke{
+    background-color: rgb(82, 157, 208);
+    width: 120px;
+    height: 25px;
+    border-radius: 5%;
+    color: white;
+    border: none;
+}
+#favourite_jokes{
+    float:right;
+    width: 38%;
+    height: 100%;
+    padding: 40px 0;
+}
+#favourites{
+    padding: 35px 35px 0;
+}
+button[data-id='heart_button']{
+    float: right;
+    border: none;
+    background-color:white;
+}
+div[data-class='filterJokes']{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border: 1px solid grey;
+    padding: 15px 15px 25px;
+    border-radius: 2%;
+    margin-bottom: 30px;
+    background-color: white;
+}
+#all .filterJokes{
+    margin: 45px 0;
+}
+.jokeId{
+    font-size: 10px;
+}
+.jokeCategory{
+    font-size: 10px;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
